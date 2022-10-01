@@ -1,5 +1,6 @@
 
 import './App.css';
+import MenuCategory from './Components/menupagecomponents/menucatagories';
 import Navbar from './Components/navbar';
 import Homepage from './pages/homepage';
 import Menu from './pages/menupage';
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
      <Navbar />
      {/* <Homepage /> */}
+     {/* <MenuCategory/> */}
      <Menu />
     </div>
   );

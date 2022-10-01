@@ -1,10 +1,10 @@
 import {Box, Button, Center, Divider, Flex, Image, Link, Spacer, Text} from "@chakra-ui/react"
 export default function Navbar(){
     return (
-        <Box>
+        <Box position={"sticky"} top="0px" bg={"white"} zIndex="1000000000px" opacity="1000px">
             <Box>hello</Box>
             <Divider></Divider>
-            <Flex w={"80%"} justifyContent={"space-between"} h={"100px"} m={"auto"} >
+            <Flex w={"80%"} justifyContent={"space-between"} h={"100px"} m={"auto"} bg={"white"} zIndex="1000000000px" opacity="1000px">
           <Center>
           <Flex gap={6}>
                 <Link>
