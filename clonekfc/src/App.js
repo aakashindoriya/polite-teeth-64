@@ -1,10 +1,14 @@
 
+import AllRoutes from './Allrouts/Allroutes';
 import './App.css';
+import Navbar from './Components/navbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>love react</h1>
+     <Navbar />
+    <AllRoutes />
+    
     </div>
   );
 }
