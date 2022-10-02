@@ -48,7 +48,7 @@ export default function Menu(){
     console.log(burger)
     useEffect(()=>{
         executeScroll(id)
-    })
+    },[])
     return(<Flex w={"80%"} m="auto">
         <Box position="sticky" top={"150px"} w={"60%"}>
         <Box  position="sticky" top={"150px"} w={"100%"} >
