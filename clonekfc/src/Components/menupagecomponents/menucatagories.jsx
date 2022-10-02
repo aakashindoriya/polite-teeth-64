@@ -1,5 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
-import MenuList from "../../pages/menulist";
+import MenuList from "./menulist";
 
 export default function MenuCategory({scroll}){
     return(
