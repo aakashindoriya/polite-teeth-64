@@ -60,7 +60,7 @@ export default function Signup(){
         <Stack spacing={3}>
         <Input variant='flushed' placeholder='Name' name="name" value={data.name} onChange={(e)=>HandleForm(e)} />
         <Input variant='flushed' placeholder='Email' name="email" value={data.email} onChange={(e)=>HandleForm(e)}/>
-        <Input variant='flushed' placeholder='Password' name="password" value={data.password} onChange={(e)=>HandleForm(e)}/>
+        <Input variant='flushed' placeholder='Password' name="password" type="password" value={data.password} onChange={(e)=>HandleForm(e)}/>
 
         </Stack>
         </Box>

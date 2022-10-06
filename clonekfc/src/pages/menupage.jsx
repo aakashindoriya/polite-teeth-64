@@ -33,22 +33,19 @@ export default function Menu(){
             default  :return;
         }
     } 
-
+    let {id}=useParams()
     useEffect(()=>{
         AuthDispatch({type:"isloding"})
-        Getdata({type:"chicken"}).then((res)=>setdata(res.data))
-        Getdata({type:"launch"}).then((res)=>setlaunch(res.data))
-        Getdata({type:"boxmeals"}).then((res)=>setboxmeals(res.data))
-        Getdata({type:"burger"}).then((res)=>setburger(res.data))
-        Getdata({type:"biryani"}).then((res)=>{setbiryani(res.data); AuthDispatch({type:"removeLoding"})})
-
-        
-    },[AuthDispatch])
-    let {id}=useParams()
-    console.log(burger)
-    useEffect(()=>{
-        executeScroll(id)
-    })
+        Getdata({type:"chicken"}).then((res)=>{setdata(res.data);
+            Getdata({type:"launch"}).then((res)=>{setlaunch(res.data);
+                Getdata({type:"boxmeals"}).then((res)=>{setboxmeals(res.data);
+                    Getdata({type:"burger"}).then((res)=>{
+                        setburger(res.data);
+                        Getdata({type:"biryani"}).then((res)=>{setbiryani(res.data);executeScroll(id);
+                        AuthDispatch({type:"removeLoding"})})
+                    })}) })})
+         },[id,AuthDispatch])
+   
     return(<Flex w={"80%"} m="auto">
         <Box position="sticky" top={"150px"} w={"60%"}>
         <Box  position="sticky" top={"150px"} w={"100%"} >
