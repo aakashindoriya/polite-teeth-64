@@ -11,7 +11,7 @@ let obj={
     password:""
 }
 function GetData(){
-return axios("http://localhost:3000/users")
+return axios("https://aakashbackend.onrender.com/users")
 }
 export default function Login(){
     let navigate=useNavigate()
