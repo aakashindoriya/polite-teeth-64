@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react"
+import { Box, Flex, Grid, Image, Text, useMediaQuery } from "@chakra-ui/react"
 import { useContext } from "react"
 import { useRef, useState } from "react"
 import { useEffect } from "react"
@@ -33,6 +33,7 @@ export default function Menu(){
             default  :return;
         }
     } 
+    const [isMobile] = useMediaQuery("(max-width: 768px)")
     let {id}=useParams()
     useEffect(()=>{
         AuthDispatch({type:"isloding"})
@@ -45,13 +46,14 @@ export default function Menu(){
                         AuthDispatch({type:"removeLoding"})})
                     })}) })})
          },[id,AuthDispatch])
+
    
     return(<Flex w={"80%"} m="auto">
         <Box position="sticky" top={"150px"} w={"60%"}>
-        <Box  position="sticky" top={"150px"} w={"100%"} >
+        {!isMobile&&<Box  position="sticky" top={"150px"} w={"100%"} >
         <MenuCategory scroll={executeScroll}/>
 
-        </Box>
+        </Box>}
         </Box>
         <Box>
         <Box  h="150px"  ref={HD} display={"flex"} alignItems="center" justifyContent={"left"}><Text as={"b"}  fontSize={"22px"} >CHICKEN BUCKETS</Text></Box>

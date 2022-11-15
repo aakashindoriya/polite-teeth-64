@@ -1,12 +1,14 @@
-import {Box, Button, Center, Divider, Flex, Image, Spacer, Text} from "@chakra-ui/react"
+import {Box, Button, Center, Divider, Flex, Image, Spacer, Text, useMediaQuery} from "@chakra-ui/react"
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { CartContext } from "../Context/CartContext"
 export default function Navbar(){
     let {state}=useContext(CartContext)
+    const [isMobile] = useMediaQuery("(max-width: 768px)")
+    console.log(isMobile)
     return (
         <Box position={"sticky"} top="0px" bg={"white"} zIndex="1000000000" >
-            <Box>Finding Location....</Box>
+            <Box>aakash indoriya </Box>
             <Divider></Divider>
             <Flex w={"80%"} justifyContent={"space-between"} h={"100px"} m={"auto"} bg={"white"} zIndex="1000000000px" opacity="1000px">
           <Center>
@@ -15,13 +17,15 @@ export default function Navbar(){
                         <Image h={"23px"} w="73px" src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"  alt="Kfc logo"/>
                 </Link>
                 <Spacer />
-                <Link to="/menu">
+                {!isMobile&&<Link to="/menu">
                 <Button variant='link'><Text as="b">Menu</Text></Button>
-                </Link>
+                </Link>}
                 <Spacer />
-                <Link>
+               {
+                !isMobile&& <Link>
                 <Button variant='link'><Text as="b">Deals</Text></Button>
                 </Link>
+               }
 
                 </Flex>
           </Center>
