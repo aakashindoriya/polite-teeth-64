@@ -1,49 +1,37 @@
-# kfc clone
-this project is a clone of KFC.com .kfc is a usa bashed well-known restorent chain .
+KFC_WEBSITE_CLONE
+KFC_website_clone where users can log in through their mobile numbers can order foods, and also can see their total ordered items and their prices in the navbar. And also users can see their ordered foods by clicking on the cart logo and making payments to order. A collaborative project, built-in 5 days by a team of 3 developers.
 
-# to run the project Json server should run on port 3000 
+Tech Stack
+1. React
+2. React Router Dom
+3. JavaScript
+4. Chakra ui
+5. React Scroll
 
-#app link 
-https://clonekfc-aakashindoriya.vercel.app
-
-
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Live Demo
+https://clonekfc-aakashindoriya.vercel.app/
 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Landing Page
+If new user enters in the system then the user will land here. 
+![image](https://user-images.githubusercontent.com/37771235/208418267-66414964-edf1-4a06-b100-05cbd5a35c8f.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Home Page
+Here the user will interact with different categories of foods. 
+![image](https://user-images.githubusercontent.com/37771235/208418440-b97e966d-7707-43a2-8dd9-f512e7c9c905.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Login Page
+Here the user can login through a mobile number. Example- mobile: 123456789 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Menu Page
+Here the user can select different food items. r
+
+4 cart Page 
+here user will have his cart from where he can finally pay
+
 
