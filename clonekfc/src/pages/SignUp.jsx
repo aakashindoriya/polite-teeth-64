@@ -9,10 +9,10 @@ let obj={
     password:""
 }
 function GetData(){
-return axios("https://aakashbackend.onrender.com/users")
+return axios("https://mkibap.onrender.com/users")
 }
 function SetData(data){
-    return axios.post("https://aakashbackend.onrender.com/users",data)
+    return axios.post("https://mkibap.onrender.com/users",data)
 }
 export default function Signup(){
     let navigate=useNavigate()
